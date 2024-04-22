@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        #button {
+            background-color: #8dceef; 
+            color: white;
+            padding: 2px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+        
+    </style>
+
+    <button id="button">Click me</button>
+
+    <p id="event">
+
+        <script>
+            const element = document.getElementById("button");
+            element.addEventListener("click", myFunction);
+
+            function myFunction() {
+                document.getElementById("event").innerHTML = "Clicked Successfully";
+            }
+        </script>
+
+</body>
+</html>
