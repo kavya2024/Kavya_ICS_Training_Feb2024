@@ -1,0 +1,22 @@
+﻿@model Assessment_2.Models.Customer
+@{ ViewBag.Title = "CustomersInGermany"; }
+
+<h2>CustomersInGermany</h2>
+<table>
+    <tr>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+        <th>Contact Title</th>
+
+    </tr>
+    @foreach (var customer in Model)
+    {
+<tr>
+
+    <td>@customer.CompanyName</td>
+    <td>@customer.ContactName</td>
+    <td>@customer.ContactTitle</td>
+
+</tr>
+}
+</table>
